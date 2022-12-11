@@ -161,6 +161,7 @@ header .navbar ul li a:hover {
     flex-flow: column;
     padding: 0 15rem;
     background-color: deepskyblue;
+    padding-bottom: 20px;
 }
 
 
@@ -191,6 +192,11 @@ header .navbar ul li a:hover {
     flex-wrap: wrap;
     padding: 1rem 0;
     background-color: lightslategray;
+}
+.about_text{
+    font-size: 22px;
+    color: white;
+    border-bottom: 2px solid black;
 }
 
 .about .row .info {
@@ -238,25 +244,36 @@ header .navbar ul li a:hover {
     color: #eee;
 }
 
-.education .box-container {
+.project .box-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 1rem 0;
     padding-left: 3rem;
-    background-color: hotpink;
+    border-top: 2px solid black;
+    
 }
 
-.education .box-container .box {
-    width: 27rem;
+.img{
+    width: 100%;
+}
+.text{
+    font-size: 25px;
+    font-weight: bold;
+    color: #eee;
+    box-shadow: 50px 40px 30px 20px skyblue;
+}
+.project .box-container .box {
     margin: 4rem 1rem;
-    padding-left: 4rem;
-    border-left: .2rem solid #fff;
+    padding: 10px;
+    border: .2rem solid #fff;
     position: relative;
+    background-color:slategrey
+    
 }
 
-.education .box-container .box span {
+.project .box-container .box span {
     font-size: 1.3rem;
     background: #222;
     color: white;
@@ -264,20 +281,21 @@ header .navbar ul li a:hover {
     padding: .5rem 2.5rem;
 }
 
-.education .box-container .box h3 {
+.project .box-container .box h3 {
     font-size: 2rem;
     color: #fff;
     padding-top: 1.5rem;
 }
 
-.education .box-container .box p {
+.project .box-container .box p {
     font: size 1.4rem;
     color: #eee;
     padding: 1rem 0;
 }
 
 
-.education .box-container .box i {
+
+.project .box-container .box i {
     position: absolute;
     top: -1.5rem;
     left: 2.5rem;
@@ -297,7 +315,7 @@ header .navbar ul li a:hover {
 }
 
 
-.portfolio .box-container {
+.work .box-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -306,7 +324,7 @@ header .navbar ul li a:hover {
     background-color: honeydew;
 }
 
-.portfolio .box-container .box {
+.work .box-container .box {
     height: 20rem;
     width: 26rem;
     border-radius: 1rem;
@@ -317,15 +335,51 @@ header .navbar ul li a:hover {
 
 
 
-.portfolio .box-container .box img {
+.work .box-container .box img {
     height: 100%;
     width: 100%;
     object-fit: cover;
 }
 
-.portfolio .box-container .box:hover img {
+.work .box-container .box:hover img {
     transform: scale(1.2);
 }
+
+/* ------gg--- */
+.skill .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 5rem 0;
+    background-color:plum;
+}
+
+.skill .box-container .box {
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+
+
+.skill .box-container .box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.skill .box-container .box:hover img {
+    transform: scale(1.2);
+}
+
+
+
+
+
 
 .contact .row{
     display: flex;
